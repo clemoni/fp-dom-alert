@@ -2,7 +2,7 @@
 
 Library that helps you create HTML Alert.
 
-![Alert info is create]('./../img/alert-precreated.png')
+![Alert info is create](https://github.com/clemoni/fp-dom-alert/blob/main/img/alert-precreated.png)
 
 ## Installation
 
@@ -174,4 +174,4 @@ _switchAlertDisplay(); // display:block
 
 The alert now is now created.
 
-![Alert info is create]('./../img/alert-info.jpg')
+![Alert info is create](https://github.com/clemoni/fp-dom-alert/blob/main/img/alert-info.jpg)
