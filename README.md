@@ -2,8 +2,7 @@
 
 Library that helps you create HTML Alert.
 
-![Alert info is create](https://github.com/clemoni/fp-dom-alert/blob/main/img/alert-precreated.png)
-
+<img src="https://github.com/clemoni/fp-dom-alert/blob/main/img/alert-precreated.png" withalt="Alert info is create" width="600" height="300">
 ## Installation
 
 You need node.js and npm and [fp-dom-tool](https://www.npmjs.com/package/fp-dom-tool).
