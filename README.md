@@ -2,7 +2,7 @@
 
 Library that helps you create HTML Alert.
 
-<!-- insert image here -->
+![Alert info is create]('./../img/alert-precreated.png')
 
 ## Installation
 
@@ -174,4 +174,4 @@ _switchAlertDisplay(); // display:block
 
 The alert now is now created.
 
-<!-- insert screen shot -->
+![Alert info is create]('./../img/alert-info.jpg')
