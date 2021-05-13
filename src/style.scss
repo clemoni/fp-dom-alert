@@ -3,23 +3,21 @@ $message-danger:#F8D7D9;
 $message-success:#D4EDD9;
 $message-warning:#FFF3CD;
 
-
 @mixin message($color){
     background-color:$color;
     border-color: darken($color, 50);
     color:darken($color, 50);
 }
 
-
 ._message{
   display:none;
   
   &__container{
-    padding:.6rem;
+    padding:.5rem;
     border:2px solid #000;
     border-radius:0.3em;
     font-family: 'Montserrat', sans-serif;
-    font-size: 1.1rem;
+    font-size: 1rem;
     margin:0.3rem 0;
   }
   &--danger{
