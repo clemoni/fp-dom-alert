@@ -174,4 +174,4 @@ _switchAlertDisplay(); // display:block
 
 The alert now is now created.
 
-<img src="https://github.com/clemoni/fp-dom-alert/blob/main/img/alert-info.jpg" alt="Alert info is created" width="600" height="300">
+<img src="https://github.com/clemoni/fp-dom-alert/blob/main/img/alert-info.jpg" alt="Alert info is created" width="500" height="100">
