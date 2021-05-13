@@ -1,12 +1,11 @@
 const path = require("path");
-const HtmlWebpackPlugin = require("html-webpack-plugin");
+// const HtmlWebpackPlugin = require("html-webpack-plugin");
 
 module.exports = {
   entry: {
     index: "./src/index.js",
   },
-  mode: "development",
-  devtool: "inline-source-map",
+
   output: {
     filename: "fp-dom-alert.js",
     path: path.resolve(__dirname, "dist"),
@@ -17,7 +16,7 @@ module.exports = {
     clean: true,
   },
   externals: {
-    lodash: {
+    fpdomtool: {
       commonjs: "fp-dom-tool",
       commonjs2: "fp-dom-tool",
       amd: "fp-dom-tool",
@@ -36,15 +35,11 @@ module.exports = {
           },
         },
       },
-      {
-        test: /\.scss$/,
-        use: ["style-loader", "css-loader", "sass-loader"],
-      },
     ],
   },
-  plugins: [
-    new HtmlWebpackPlugin({
-      template: "./src/index.html",
-    }),
-  ],
+  //   plugins: [
+  //     new HtmlWebpackPlugin({
+  //       template: "./src/index.html",
+  //     }),
+  //   ],
 };
