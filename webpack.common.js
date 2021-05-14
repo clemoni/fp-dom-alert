@@ -9,19 +9,9 @@ module.exports = {
   output: {
     filename: "fp-dom-alert.js",
     path: path.resolve(__dirname, "dist"),
-    library: {
-      name: "fp-dom-alert",
-      type: "umd",
-    },
+    library: "fp-dom-alert",
+    libraryTarget: "umd",
     clean: true,
-  },
-  externals: {
-    fpdomtool: {
-      commonjs: "fp-dom-tool",
-      commonjs2: "fp-dom-tool",
-      amd: "fp-dom-tool",
-      root: "_",
-    },
   },
   module: {
     rules: [
@@ -42,4 +32,7 @@ module.exports = {
       template: "./src/index.html",
     }),
   ],
+  resolve: {
+    extensions: [".js"],
+  },
 };
