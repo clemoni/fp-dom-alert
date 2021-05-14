@@ -5,7 +5,6 @@ module.exports = {
   entry: {
     index: "./src/index.js",
   },
-  target: "web",
   output: {
     filename: "fp-dom-alert.js",
     path: path.resolve(__dirname, "dist"),
