@@ -5,13 +5,14 @@ module.exports = {
   entry: {
     index: "./src/index.js",
   },
-
+  target: "web",
   output: {
     filename: "fp-dom-alert.js",
     path: path.resolve(__dirname, "dist"),
-    library: "fp-dom-alert",
+    library: "fpDomAlert",
     libraryTarget: "umd",
-    clean: true,
+    globalObject: "this",
+    umdNamedDefine: true,
   },
   module: {
     rules: [
@@ -32,7 +33,4 @@ module.exports = {
       template: "./src/index.html",
     }),
   ],
-  resolve: {
-    extensions: [".js"],
-  },
 };

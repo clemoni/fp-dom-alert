@@ -56,7 +56,17 @@ const _setStyle = (element) => (newAlertCss) => {
   return element;
 };
 
-module.exports = {
+// const main = _tool._getElementClass("main");
+// console.log(main);
+// const messageContainer = _tool._createElement("div")(["class", "_message"]);
+// const mainContainer = _tool._appendElement(main);
+// mainContainer(messageContainer);
+// const messageContainerAppend = _tool._appendElement(messageContainer);
+// messageContainerAppend(_alertDanger("Something is wrong"));
+// const _switchAlertDisplay = _tool._switchElementDisplay(messageContainer);
+// _switchAlertDisplay();
+
+const _export = {
   _alert,
   _alertDanger,
   _alertSuccess,
@@ -64,3 +74,5 @@ module.exports = {
   _createAlertStyle,
   _setStyle,
 };
+
+export default _export;

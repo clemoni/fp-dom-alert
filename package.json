@@ -2,9 +2,15 @@
   "name": "fp-dom-alert",
   "version": "1.0.1",
   "description": "JS library, create alert using the fp-dom-tool module",
-  "main": "dist/fp-dom-alert.js",
+  "main": "./dist/fp-dom-alert.js",
+  "files": [
+    "fp-dom-alert.js",
+    "fp-dom-alert.js.map",
+    "index.css",
+    "index.css.map"
+  ],
   "scripts": {
-    "build-dev": "webpack --config webpack.config.js --stats-error-details --watch",
+    "build-dev": "webpack --config webpack.dev.js --stats-error-details --watch",
     "build": "webpack --config webpack.prod.js"
   },
   "repository": {
