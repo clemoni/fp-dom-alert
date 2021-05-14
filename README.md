@@ -11,16 +11,20 @@ You need node.js and npm and [fp-dom-tool](https://www.npmjs.com/package/fp-dom-
 `npm install fp-dom-alert`
 
 ```javascript
-import _alert from "fp-dom-alert";
+import _tool from "fp-dom-tool"; // opt.
+import _alert from "fp-dom-alert"; // lib fp-dom-alert
+import "fp-dom-alert/lib/index.css"; // css of lib fp-dom-alert
 
-module.exports = {
-  _getElement,
-  _getElementID,
-  _getElementClass,
-  _createElement,
-  _createElementContent,
-  _appendElement,
+const _export = {
+  _alert,
+  _alertDanger,
+  _alertSuccess,
+  _alertWarning,
+  _createAlertStyle,
+  _setStyle,
 };
+
+export default _export;
 ```
 
 ## Usage
@@ -44,9 +48,9 @@ const _alertWarning = _alert._alert("warning");
 ```javascript
 const appendMessageContainer = _tool._appendElement(_messageContainer);
 appendMessageContainer(
-  _alertDanger("Something is wrong"),
-  _alertWarning("Better be carefull"),
-  _alertSuccess("All is fine now")
+  _alert._alertDanger("Something is wrong"),
+  _alert._alertWarning("Better be carefull"),
+  _alert._alertSuccess("All is fine now")
 );
 ```
 

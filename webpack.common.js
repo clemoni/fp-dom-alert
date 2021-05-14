@@ -1,5 +1,4 @@
 const path = require("path");
-const HtmlWebpackPlugin = require("html-webpack-plugin");
 
 module.exports = {
   entry: {
@@ -8,12 +7,10 @@ module.exports = {
   target: "web",
   output: {
     filename: "fp-dom-alert.js",
-    path: path.resolve(__dirname, "dist"),
+    path: path.resolve(__dirname, "lib"),
     library: {
       name: "fpDomAlert",
       type: "umd",
-      globalObject: "this",
-      umdNamedDefine: true,
     },
   },
   module: {
@@ -30,9 +27,4 @@ module.exports = {
       },
     ],
   },
-  plugins: [
-    new HtmlWebpackPlugin({
-      template: "./src/index.html",
-    }),
-  ],
 };
