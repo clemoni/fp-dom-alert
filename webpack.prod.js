@@ -9,7 +9,7 @@ module.exports = merge(common, {
   module: {
     rules: [
       {
-        test: /\.(sass|less|css)$/,
+        test: /\.scss$/,
         use: [MiniCssExtractPlugin.loader, "css-loader", "sass-loader"],
       },
     ],
@@ -18,5 +18,8 @@ module.exports = merge(common, {
   optimization: {
     minimize: true,
     minimizer: [new CssMinimizerPlugin()],
+  },
+  resolve: {
+    extensions: [".js", ".jsx", ".scss"],
   },
 });
