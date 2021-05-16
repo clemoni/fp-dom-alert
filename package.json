@@ -1,6 +1,6 @@
 {
   "name": "fp-dom-alert",
-  "version": "1.0.4",
+  "version": "1.0.5",
   "description": "JS library, create alert using the fp-dom-tool module",
   "main": "./lib/fp-dom-alert.js",
   "files": [
