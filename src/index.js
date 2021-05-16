@@ -56,6 +56,14 @@ const _setStyle = (element) => (newAlertCss) => {
   return element;
 };
 
+// const body = _tool._getElement()("body");
+// const _messageContainer = _tool._createElement("div")(["class", "_message"]);
+// const appendMessageContainer = _tool._appendElement(_messageContainer);
+// appendMessageContainer(_alertSuccess("Yes"));
+// _tool._appendElement(body)(_messageContainer);
+// const _switchAlertDisplay = _tool._switchElementDisplay(_messageContainer);
+// _switchAlertDisplay();
+
 const _export = {
   _alert,
   _alertDanger,
