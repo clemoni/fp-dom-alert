@@ -28,7 +28,7 @@ export default _export;
 
 **To export the Style**
 
-In you `config.webpack.js`:
+- In you `config.webpack.js`:
 
 ```javascript
 module: {
@@ -51,10 +51,10 @@ module: {
 }
 ```
 
-In you scss or css file:
+- In you scss or css file:
 
 ```css
-@import "~fp-dom-alert/lib/index.css";
+@import "fp-dom-alert/lib/index.css";
 ```
 
 ## Usage
