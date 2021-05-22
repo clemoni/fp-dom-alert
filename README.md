@@ -13,7 +13,6 @@ You need node.js and npm and [fp-dom-tool](https://www.npmjs.com/package/fp-dom-
 ```javascript
 import _tool from "fp-dom-tool"; // opt.
 import _alert from "fp-dom-alert"; // lib fp-dom-alert
-import "fp-dom-alert/lib/index.css"; // css of lib fp-dom-alert
 
 const _export = {
   _alert,
@@ -25,6 +24,37 @@ const _export = {
 };
 
 export default _export;
+```
+
+**To export the Style**
+
+In you `config.webpack.js`:
+
+```javascript
+module: {
+  rules: [
+    {
+      test: /\.css$/,
+      use: [
+        {
+          loader: "style-loader",
+        },
+        {
+          loader: "css-loader",
+          options: {
+            modules: true,
+          },
+        },
+      ],
+    },
+  ];
+}
+```
+
+In you scss or css file:
+
+```css
+@import "~fp-dom-alert/lib/index.css";
 ```
 
 ## Usage
